@@ -1,0 +1,20 @@
+.employee-card{
+    background-color: white;
+    border-radius: 12px;
+    padding:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    transition:transform 0.3s ease;
+}
+
+.emploee-card:hover{
+    transform: translateY(-5px);
+}
+
+.employee-card h2{
+    margin-bottom: 15px;
+    color:#333;
+}
+
+.employee-card p{
+    margin:8px 0;
+}

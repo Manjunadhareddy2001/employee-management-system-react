@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import Navbar from './components/Navbar';
 import Login from './pages/Login/Login';
+import Dashboard from './components/Dashboard';
 function App() {
   return (
     <>
-      <Navbar title="Employee Management System" company="ABC Technologies" year="2026"/>
       <Login></Login>
+      <Dashboard></Dashboard>
     </>
   );
 }
