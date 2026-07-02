@@ -1,7 +1,7 @@
 import React from "react";
 import "./EmployeeCard.css"
 
-function EmployeeCard({employee}){
+function EmployeeCard({employee,handleEditEmployee,deleteEmployee}){
     return(
         <div className="employee-card">
             <h2>{employee.name}</h2>
@@ -14,6 +14,10 @@ function EmployeeCard({employee}){
             <p>
                 <strong>Salary:</strong> ${employee.salary}
             </p>
+            <br />
+            <button onClick={()=>handleEditEmployee(employee)}>Edit</button>
+            <br />
+            <button onClick={()=>deleteEmployee(employee.id)}>Delete</button>
         </div>
     )
 }
